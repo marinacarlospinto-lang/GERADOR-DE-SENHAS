@@ -1,0 +1,174 @@
+/* Configurações globais da página */
+body {
+    background-color: #C8A2C8; /* Fundo Lilás */
+    color: #FF69B4;            /* Texto Rosa Chiclete */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+/* Cabeçalho */
+.cabecalho-principal {
+    text-align: center;
+    padding: 30px 20px 10px 20px;
+}
+
+.icone-cadeado {
+    width: 80px; /* Tamanho da imagem do cadeado */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.cabecalho-principal h1 {
+    font-size: 70px;
+    margin: 10px 0;
+}
+
+.cabecalho-principal p {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+/* Primeira Caixa: Input de Senha */
+.container-senha {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.input-senha {
+    width: 100%;
+    background-color: #A0E6FF; /* Azul bebê */
+    color: #000080;            /* Azul marinho */
+    font-size: 15px;           /* Tamanho 15px */
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Segunda Caixa: Painel de Personalização */
+.container-personalizar {
+    margin-top: 30px;
+    width: 80%;
+    max-width: 800px;
+    background-color: #A0E6FF; /* Fundo Azul bebê */
+    border-radius: 12px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+/* Título superior esquerdo da área de personalização */
+.container-personalizar h2 {
+    color: #000080;            /* Azul marinho */
+    font-size: 50px;           /* Tamanho 50px */
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: left;          /* Alinhado à esquerda */
+}
+
+/* Layout de 3 colunas horizontais */
+.colunas-config {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.coluna {
+    flex: 1;
+}
+
+/* Títulos das colunas */
+.coluna h3 {
+    color: #A0E6FF;            /* Escrito na cor azul bebê */
+    background-color: #000080; /* Fundo azul marinho para dar contraste e leitura */
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Elementos da COLUNA 1 (Seletor) */
+.seletor-caracteres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-seletor, .bloco-numero {
+    width: 45px;
+    height: 45px;
+    background-color: #000080;
+    color: #A0E6FF;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bloco-numero {
+    cursor: default;
+}
+
+/* Elementos da COLUNA 2 (Características) */
+.opcoes-caracteres {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #000080;
+    font-weight: bold;
+}
+
+.opcoes-caracteres label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Elementos da COLUNA 3 (Força da Senha) */
+.forca-senha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.barra-progresso {
+    width: 100%;
+    height: 15px;
+    background-color: #b3c6ff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progresso-preenchido {
+    width: 80%; /* Representando uma senha forte */
+    height: 100%;
+    background-color: #000080; /* Azul marinho */
+}
+
+.indicador-texto {
+    color: #000080;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Responsividade simples para telas pequenas */
+@media (max-width: 768px) {
+    .colunas-config {
+        flex-direction: column;
+    }
+    .container-personalizar h2 {
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho-principal">
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="Cadeado Fechado" class="icone-cadeado">
+        <h1>Gerador de senhas</h1>
+        <p>Gere instantaneamente uma senha aleatória e segura</p>
+    </header>
+
+    <div class="container-senha">
+        <input type="text" value="senha" class="input-senha">
+    </div>
+
+    <div class="container-personalizar">
+        <h2>personalize sua senha</h2>
+        
+        <div class="colunas-config">
+            <div class="coluna">
+                <h3>Número de caracteres</h3>
+                <div class="seletor-caracteres">
+                    <button class="btn-seletor">-</button>
+                    <div class="bloco-numero">12</div>
+                    <button class="btn-seletor">+</button>
+                </div>
+            </div>
+
+            <div class="coluna">
+                <h3>Características da senha</h3>
+                <div class="opcoes-caracteres">
+                    <label><input type="checkbox" checked> Letras maiúsculas</label>
+                    <label><input type="checkbox" checked> Letras minúsculas</label>
+                    <label><input type="checkbox" checked> Números</label>
+                </div>
+            </div>
+
+            <div class="coluna">
+                <h3>Força da senha</h3>
+                <div class="forca-senha">
+                    <div class="barra-progresso">
+                        <div class="progresso-preenchido"></div>
+                    </div>
+                    <span class="indicador-texto">Forte</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
